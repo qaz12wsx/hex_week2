@@ -79,8 +79,9 @@
             /*隱藏選單*/
             max-height: 0px;
             overflow: hidden;
+            opacity: 0;
             /*結束*/
-            transition: max-height 2.3s;
+            transition: opacity 1.8s;
             margin-top: 2px;
             position: absolute;
             z-index: 100;
@@ -107,6 +108,7 @@
         }
         .showdmenu{
             max-height: 280px;
+            opacity: 1;
         }
         h1{
             padding-left: 20px;
