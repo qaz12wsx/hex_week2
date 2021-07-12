@@ -65,4 +65,214 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header .container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container h1 {
+  padding: 9px 0;
+}
+
+.header .container h1 img {
+  display: block;
+}
+
+.header .container .pc-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 455px;
+}
+
+.header .container .pc-menu li {
+  padding: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.header .container .pc-menu i {
+  padding-right: 3px;
+}
+
+.header .container .pc-menu a {
+  color: #8D8D8D;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.header .container .mobile-menu-list {
+  display: none;
+}
+
+.header .container .mobile-menu {
+  display: none;
+}
+
+.header .container .mobile-menu .menu-cart {
+  position: relative;
+  font-size: 24px;
+  color: #8D8D8D;
+  padding: 0px 15px;
+}
+
+.header .container .mobile-menu .menu-cart span {
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  font-size: 10px;
+  color: #FFF;
+  background-color: #916000;
+  border: 2px solid #916000;
+  border-radius: 40px;
+  padding: 1px 4px;
+}
+
+.header .container .mobile-menu .menu-list {
+  padding: 12px 22px;
+}
+
+@media (max-width: 568px) {
+  .header .container .pc-menu {
+    display: none;
+  }
+  .header .container .mobile-menu {
+    display: block;
+    color: #8D8D8D;
+  }
+  .header .container .mobile-menu-list {
+    /*隱藏選單*/
+    max-height: 0px;
+    overflow: hidden;
+    /*結束*/
+    -webkit-transition: max-height 2.3s;
+    transition: max-height 2.3s;
+    margin-top: 2px;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .header .container .mobile-menu-list li {
+    background-color: #707070;
+    border-top: 1px solid #FFF;
+  }
+  .header .container .mobile-menu-list li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 56px;
+    color: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .header .container .showdmenu {
+    max-height: 280px;
+  }
+  .header .container h1 {
+    padding-left: 20px;
+  }
+}
+
+.banner {
+  height: 870px;
+  background: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg") no-repeat padding-box;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner .container {
+  max-width: 1110px;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.banner .container .description {
+  max-width: 455px;
+  float: right;
+  margin-top: 25%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.banner .container .description h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.banner .container .description p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.banner .container .description a {
+  border: 2px solid #FFF;
+  border-radius: 30px;
+  color: #FFF;
+  font-size: 26px;
+  width: 350px;
+  display: block;
+  text-align: center;
+  padding: 15.8px 0;
+  margin-top: 16px;
+}
+
+@media (max-width: 568px) {
+  .banner {
+    height: 480px;
+    background-position: 15% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .container {
+    max-width: 375px;
+  }
+  .banner .container .description {
+    max-width: 375px;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=all.css.map */
