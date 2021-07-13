@@ -277,4 +277,151 @@ a {
     margin-top: 0;
   }
 }
+
+.content .container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 40px;
+}
+
+.content .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .container .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.content .container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.content .container li .text {
+  width: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.content .container li .text .contain {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.content .container li .text .long p {
+  margin-bottom: 52px;
+}
+
+.content .container li .text .long h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.content .container li .text .long a {
+  border: 2px solid #000;
+  border-radius: 30px;
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  width: 350px;
+  display: block;
+  text-align: center;
+  padding: 15.8px 0;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.content .container li .text h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.content .container li .text p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.content .container li .text a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #AC8A46;
+}
+
+.content .container li .content-pic {
+  width: 50%;
+  height: 555px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content .container li .pic1 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index2.jpg");
+  background-position: 0 -20px;
+}
+
+.content .container li .pic2 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index3.png");
+}
+
+.content .container li .pic3 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index4.jpg");
+  background-position: -70px 0;
+}
+
+.content .container li .pic4 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index5.jpg");
+  height: 1080px;
+}
+
+@media (max-width: 568px) {
+  .content .container .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .container li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .container li .content-pic {
+    margin-bottom: 8px;
+    width: 100%;
+    height: 350px;
+  }
+  .content .container li .pic4 {
+    height: 680px;
+  }
+  .content .container li .text {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=all.css.map */
