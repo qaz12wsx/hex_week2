@@ -88,7 +88,14 @@ body {
   padding: 0 10px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
   .container {
     padding: 0;
     max-width: 345px;
@@ -108,7 +115,7 @@ body {
 }
 
 .header .container h1 {
-  padding: 9px 0;
+  padding: 9px 10px;
 }
 
 .header .container h1 img {
@@ -174,7 +181,7 @@ body {
   padding: 12px 22px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .header .container .pc-menu {
     display: none;
   }
@@ -267,10 +274,10 @@ body {
   margin-top: 16px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   .banner {
-    height: 480px;
-    background-size: cover;
+    height: 740px;
+    background-size: auto;
     background-position: 15% 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,8 +290,15 @@ body {
             align-items: center;
   }
   .banner .container .description {
-    padding: 101px 0 135px;
+    padding: 101px 10px 135px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 480px;
+    background-size: cover;
   }
 }
 
@@ -404,7 +418,7 @@ body {
   height: 1080px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .content .container {
     padding-bottom: 0;
   }
@@ -512,7 +526,7 @@ body {
   padding-bottom: 24px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   .product {
     padding-top: 32px;
     padding-bottom: 12px;
@@ -522,12 +536,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 345px;
+    margin: 0 auto;
   }
   .product ul .med {
     margin: 0 auto;
-  }
-  .product ul li {
-    width: 100%;
   }
   .product ul li a {
     max-width: 100%;
@@ -597,7 +610,13 @@ body {
   color: #AC8A46;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
+  .feature .container .ad {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
   .feature .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -653,7 +672,7 @@ body {
   right: 0;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .footer-banner {
     background-size: cover;
     background-position: left;
@@ -714,7 +733,7 @@ body {
   color: #FFF;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .footer .container h2 {
     padding: 21px 0;
   }
