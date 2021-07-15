@@ -357,6 +357,7 @@ body {
 
 .content .container li .text .long p {
   margin-bottom: 52px;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 .content .container li .text .long h2 {
@@ -374,6 +375,7 @@ body {
   padding: 15.8px 0;
   margin-top: 16px;
   font-weight: 700;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 .content .container li .text h2 {
@@ -384,12 +386,14 @@ body {
 
 .content .container li .text p {
   margin-bottom: 16px;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 .content .container li .text a {
   font-size: 16px;
   line-height: 24px;
   color: #AC8A46;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 .content .container li .content-pic {
@@ -649,6 +653,7 @@ body {
   color: #8D8D8D;
   padding-bottom: 20px;
   font-weight: 501;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 .footer-banner .container .contact {
