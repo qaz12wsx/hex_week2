@@ -115,6 +115,11 @@ body{
                     line-height: 56px;
                     color: $color-w;
                     font-family: $eng;
+                    transition: 0.3s all;
+                    &:hover{
+                        background: $color-w;
+                        color:$color-w;
+                    }
                 }
             }
         }

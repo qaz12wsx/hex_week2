@@ -214,6 +214,12 @@ body {
     line-height: 56px;
     color: #FFF;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  .header .mobile-menu-list li a:hover {
+    background: #FFF;
+    color: #FFF;
   }
   .header .showdmenu {
     max-height: 280px;
