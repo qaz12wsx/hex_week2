@@ -10,12 +10,8 @@
 }
 body{
     font-size: $fz20;
-    line-height: $lh30;
+    line-height: 1.5;
     font-family: $eng;
-}
-.wrap{
-    max-width: 1920px;
-    margin: 0 auto;
 }
 
 .container{
@@ -31,25 +27,21 @@ body{
         max-width: $mobile-width;
     }
 }
-.header .container{
+.header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     h1{
         padding: 9px 10px;
-        img{
-            display: block;
-        }
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
     }
     .pc-menu{
         display: flex;
-        justify-content: space-between;
         align-items: center;
         max-width: 455px;
         li{
-            padding: 0;
-            width: 150px;
-            text-align: center;
+            padding: 0 12px;
         }
         i{
             padding-right: 3px;
@@ -64,26 +56,29 @@ body{
     }
     .mobile-menu{
         display: none;
-        .menu-cart{
-            position: relative;
-            font-size: $fz24;
-            color: $color-gray;
-            padding: 0px 15px;
-            span{
-                position: absolute;
-                top: -10px;
-                right: 3px;
-                font-size: 10px;
-                color: $color-w;
-                background-color: #916000;
-                border: 2px solid #916000;
-                border-radius: 40px;
-                padding: 1px 4px;
-            }
+    }
+    .menu-cart{
+        position: relative;
+        font-size: $fz24;
+        color: $color-gray;
+        padding: 0px 15px;
+        .cart-icon{
+            font-size: 40px;
         }
-        .menu-list{
-            padding: 12px 22px;
+        span{
+            position: absolute;
+            top: 8px;
+            left: 50px;
+            font-size: 10px;
+            color: $color-w;
+            background-color: #916000;
+            border: 2px solid #916000;
+            border-radius: 40px;
+            padding: 1px 5px;
         }
+    }
+    .menu-list{
+        padding: 12px 22px;
     }
     @include mobile{
         .pc-menu{
@@ -100,7 +95,7 @@ body{
             opacity: 0;
             /*結束*/
             transition: opacity 1.8s;
-            margin-top: 2px;
+            margin-top: 20px;
             position: absolute;
             z-index: 100;
             top: 50px;
@@ -140,10 +135,12 @@ body{
     .container{
         color: $color-w;
         padding: 295px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         .description{
             max-width: 455px;
             font-family: $eng;
-            margin-left: 60%;
             h2{
                 font-size: 40px;
                 line-height: 60px;
@@ -174,8 +171,8 @@ body{
         justify-content: center;
         align-items: center;
         .container{
+            padding: 0;
             .description{
-                padding: 101px 10px 135px;
                 margin-left: 0;
             }
         }
@@ -186,22 +183,15 @@ body{
     }
 }
 
-.content .container{
+.content{
     padding: 0 15px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+    margin-top: 40px;
+    margin-bottom: 60px;
     .reverse{
         flex-direction: row-reverse;
     }
     li{
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 100%;
         .text{
@@ -213,6 +203,12 @@ body{
                 padding: 0 10px;
             }
             .long{
+                ol{
+                    list-style-type:decimal;
+                    li{
+                        flex-direction: column;
+                    }
+                }
                 p{
                     margin-bottom: 52px;
                     font-family: $chi;
@@ -311,9 +307,6 @@ body{
                 height: 540px;
                 display: block;
                 margin-bottom: 8px;
-                img{
-                    height: 540px;
-                }
             }
             .sold{
                 display: block;
@@ -351,7 +344,7 @@ body{
                 }
             }
             h5{
-                padding-bottom: 24px;
+                margin-bottom: 24px;
             }
         }
     }
@@ -360,7 +353,7 @@ body{
         padding-bottom: 12px;
         ul{
             flex-direction: column;
-            max-width: $mobile-width;
+            max-width: 500px;
             margin: 0 auto;
             .med{
                 margin: 0 auto;
@@ -369,7 +362,7 @@ body{
                 a{
                     max-width: 100%;
                     overflow: hidden;
-                    height: 350px;
+                    height: 500px;
                     .pro1{
                         transform: translateY(-35%);
                     }
@@ -389,14 +382,21 @@ body{
             }
         }
     }
+    @include mobile{
+        ul{
+            max-width: $mobile-width;
+            li a{
+                height: 350px;
+            }
+        }
+    }
 }
 
 .feature{
-    .container{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 60px 0;
+        margin: 60px auto;
         .ad{
             background: url($pic-url+'index9.jpg') no-repeat;
             background-size: cover;
@@ -437,7 +437,6 @@ body{
                 margin-left: 0;
             }
         }
-    }
 }
 
 .footer-banner{
@@ -462,14 +461,16 @@ body{
             position: relative;
             input{
                 border: 2px solid #916000;
-                padding: 21px 0 25px 16px;
+                padding: 21px 0 21px 16px;
                 width: 100%;
             }
-            span{
+            button{
                 position: absolute;
                 background: #916000;
+                border-color: #916000;
                 color:$color-w;
-                padding: 21px 26px 20px;
+                width: 131px;
+                height: 60px;
                 right: 0;
             }
         }
@@ -485,14 +486,13 @@ body{
     color: $color-w;
     .container{
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        h2{
+        .logo{
             display: flex;
             align-items: center;
             padding-top: 20px;
             padding-bottom: 22px;
-            span{
+            p{
                 font-size: 14px;
                 line-height: 21px;
                 margin-left: 20px;
@@ -501,7 +501,6 @@ body{
         ul{
             display: flex;
             align-items: center;
-            justify-content: space-between;
             li{
                 padding: 0 18px;
                 a{

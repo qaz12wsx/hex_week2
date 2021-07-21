@@ -11,12 +11,13 @@
     <title>香水電商</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
     <link rel="stylesheet" href="scss/all.css">
+
+
 </head>
 <body>
-    <div class="wrap">
-        <div class="header">
-            <div class="container">
+        <div class="header container">
                 <h1><a href="index.html"><img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png" alt="logo"></a></h1>
                 <ul class="pc-menu">
                     <li><a href="#"><i class="fas fa-store-alt"></i>Product</a></li>
@@ -31,11 +32,13 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">log in</a></li>
                 </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-shopping-cart menu-cart" aria-hidden="true"><span>1</span></i>
-                    <i class="fas fa-bars fa-2x menu-list" aria-hidden="true"></i>
-                </div>
-            </div>
+                <div class="mobile-menu menu-cart">
+                        <i class="material-icons cart-icon">
+                            shopping_cart
+                        </i>
+                        <span>1</span>
+                        <i class="menu-list fas fa-bars fa-2x "></i>
+                    </div>
         </div>
         <div class="banner">
             <div class="container">
@@ -46,8 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="container">
+        <div class="content container">
                 <ul>
                     <li class="reverse">
                         <div class="content-pic pic1"></div>
@@ -83,18 +85,22 @@
                         <div class="content-pic pic4"></div>
                         <div class="text">
                             <div class="contain long">
-                                <h2>1.<br/>Levels of Preventive Maintenance Compliance</h2>
-                                <p>The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
-                                <h2>2.<br/>Percentage of Planned Maintenance</h2>
-                                <p>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
-                                <h2>3.<br/>Critical percentage of planned maintenance</h2>
-                                <p>Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+                                <ol>
+                                    <li><h2>Levels of Preventive Maintenance Compliance</h2>
+                                        <p>The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
+                                        </li>
+                                    <li><h2>Percentage of Planned Maintenance</h2>
+                                        <p>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
+                                        </li>
+                                    <li><h2>Critical percentage of planned maintenance</h2>
+                                        <p>Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+                                        </li>
+                                </ol>
                                 <a href="#">Plan a free online training</a>
                             </div>
                         </div>
                     </li>
                 </ul>
-            </div>
         </div>
         <div class="product">
             <div class="container">
@@ -123,8 +129,7 @@
                 </ul>
             </div>
         </div>
-        <div class="feature">
-            <div class="container">
+        <div class="feature container">
                 <div class="ad"></div>
                 <div class="text">
                     <h3>Bottle-Recycling</h3>
@@ -132,23 +137,24 @@
                     <p>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
                     <a href="#">查看更多</a>
                 </div>
-            </div>
         </div>
         <div class="footer-banner">
             <div class="container">
                 <h2>記得<br/>訂閱以獲取更多資訊！</h2>
                 <div class="contact">
                     <input type="text" placeholder="Your email address">
-                    <span>Subscribe</span>
+                    <button type="submit">Subscribe</button>
                 </div>
             </div>
         </div>
         <div class="footer">
             <div class="container">
-                <h2>
-                    <img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png" alt="logo">
-                    <span>© 2020. All Rights Reserved.</span>
-                </h2>
+                <div class="logo">
+                    <h2>
+                        <img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfumewhite.png" alt="logo">
+                    </h2>
+                    <p>© 2020. All Rights Reserved.</p>
+                </div>
                 <ul>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Blog</a></li>
@@ -156,7 +162,6 @@
                 </ul>
             </div>
         </div>
-    </div>
     <script src="https://kit.fontawesome.com/fab3685082.js" crossorigin="anonymous"></script> 
     <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/all.js"></script>

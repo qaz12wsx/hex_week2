@@ -73,13 +73,8 @@ a {
 
 body {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .container {
@@ -102,94 +97,89 @@ body {
   }
 }
 
-.header .container {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.header .container h1 {
+.header h1 {
   padding: 9px 10px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.header .container h1 img {
-  display: block;
-}
-
-.header .container .pc-menu {
+.header .pc-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   max-width: 455px;
 }
 
-.header .container .pc-menu li {
-  padding: 0;
-  width: 150px;
-  text-align: center;
+.header .pc-menu li {
+  padding: 0 12px;
 }
 
-.header .container .pc-menu i {
+.header .pc-menu i {
   padding-right: 3px;
 }
 
-.header .container .pc-menu a {
+.header .pc-menu a {
   color: #8D8D8D;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.header .container .mobile-menu-list {
+.header .mobile-menu-list {
   display: none;
 }
 
-.header .container .mobile-menu {
+.header .mobile-menu {
   display: none;
 }
 
-.header .container .mobile-menu .menu-cart {
+.header .menu-cart {
   position: relative;
   font-size: 24px;
   color: #8D8D8D;
   padding: 0px 15px;
 }
 
-.header .container .mobile-menu .menu-cart span {
+.header .menu-cart .cart-icon {
+  font-size: 40px;
+}
+
+.header .menu-cart span {
   position: absolute;
-  top: -10px;
-  right: 3px;
+  top: 8px;
+  left: 50px;
   font-size: 10px;
   color: #FFF;
   background-color: #916000;
   border: 2px solid #916000;
   border-radius: 40px;
-  padding: 1px 4px;
+  padding: 1px 5px;
 }
 
-.header .container .mobile-menu .menu-list {
+.header .menu-list {
   padding: 12px 22px;
 }
 
 @media (max-width: 767px) {
-  .header .container .pc-menu {
+  .header .pc-menu {
     display: none;
   }
-  .header .container .mobile-menu {
+  .header .mobile-menu {
     display: block;
     color: #8D8D8D;
   }
-  .header .container .mobile-menu-list {
+  .header .mobile-menu-list {
     /*隱藏選單*/
     max-height: 0px;
     overflow: hidden;
@@ -197,7 +187,7 @@ body {
     /*結束*/
     -webkit-transition: opacity 1.8s;
     transition: opacity 1.8s;
-    margin-top: 2px;
+    margin-top: 20px;
     position: absolute;
     z-index: 100;
     top: 50px;
@@ -214,22 +204,22 @@ body {
             flex-direction: column;
     max-width: 100%;
   }
-  .header .container .mobile-menu-list li {
+  .header .mobile-menu-list li {
     background-color: #707070;
     border-top: 1px solid #FFF;
   }
-  .header .container .mobile-menu-list li a {
+  .header .mobile-menu-list li a {
     display: block;
     width: 100%;
     line-height: 56px;
     color: #FFF;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   }
-  .header .container .showdmenu {
+  .header .showdmenu {
     max-height: 280px;
     opacity: 1;
   }
-  .header .container h1 {
+  .header h1 {
     padding-left: 20px;
   }
 }
@@ -243,12 +233,20 @@ body {
 .banner .container {
   color: #FFF;
   padding: 295px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner .container .description {
   max-width: 455px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin-left: 60%;
 }
 
 .banner .container .description h2 {
@@ -289,8 +287,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .banner .container {
+    padding: 0;
+  }
   .banner .container .description {
-    padding: 101px 10px 135px;
     margin-left: 0;
   }
 }
@@ -302,70 +302,62 @@ body {
   }
 }
 
-.content .container {
+.content {
   padding: 0 15px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-.content .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.content .container .reverse {
+.content .reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.content .container li {
+.content li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
 }
 
-.content .container li .text {
+.content li .text {
   width: 50%;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.content .container li .text .contain {
+.content li .text .contain {
   max-width: 370px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.content .container li .text .long p {
+.content li .text .long ol {
+  list-style-type: decimal;
+}
+
+.content li .text .long ol li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content li .text .long p {
   margin-bottom: 52px;
   font-family: PingFangTC-Regular, sans-serif;
 }
 
-.content .container li .text .long h2 {
+.content li .text .long h2 {
   font-size: 24px;
   line-height: 36px;
 }
 
-.content .container li .text .long a {
+.content li .text .long a {
   border: 2px solid #000;
   border-radius: 30px;
   color: #000;
@@ -378,75 +370,75 @@ body {
   font-family: PingFangTC-Regular, sans-serif;
 }
 
-.content .container li .text h2 {
+.content li .text h2 {
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
 }
 
-.content .container li .text p {
+.content li .text p {
   margin-bottom: 16px;
   font-family: PingFangTC-Regular, sans-serif;
 }
 
-.content .container li .text a {
+.content li .text a {
   font-size: 16px;
   line-height: 24px;
   color: #AC8A46;
   font-family: PingFangTC-Regular, sans-serif;
 }
 
-.content .container li .content-pic {
+.content li .content-pic {
   width: 50%;
   height: 555px;
   background-size: cover;
   background-position: center center;
 }
 
-.content .container li .pic1 {
+.content li .pic1 {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index2.jpg");
   background-position: 0 -20px;
 }
 
-.content .container li .pic2 {
+.content li .pic2 {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index3.png");
 }
 
-.content .container li .pic3 {
+.content li .pic3 {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index4.jpg");
   background-position: -70px 0;
 }
 
-.content .container li .pic4 {
+.content li .pic4 {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index5.jpg");
   height: 1080px;
 }
 
 @media (max-width: 767px) {
-  .content .container {
+  .content {
     padding-bottom: 0;
   }
-  .content .container .reverse {
+  .content .reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .content .container li {
+  .content li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .content .container li .content-pic {
+  .content li .content-pic {
     margin-bottom: 8px;
     width: 100%;
     height: 350px;
   }
-  .content .container li .pic4 {
+  .content li .pic4 {
     height: 680px;
   }
-  .content .container li .text {
+  .content li .text {
     margin-bottom: 32px;
     width: 100%;
   }
@@ -478,10 +470,6 @@ body {
   height: 540px;
   display: block;
   margin-bottom: 8px;
-}
-
-.product ul li a img {
-  height: 540px;
 }
 
 .product ul li .sold {
@@ -527,7 +515,7 @@ body {
 }
 
 .product ul li h5 {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
@@ -540,7 +528,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 345px;
+    max-width: 500px;
     margin: 0 auto;
   }
   .product ul .med {
@@ -549,7 +537,7 @@ body {
   .product ul li a {
     max-width: 100%;
     overflow: hidden;
-    height: 350px;
+    height: 500px;
   }
   .product ul li a .pro1 {
     -webkit-transform: translateY(-35%);
@@ -571,7 +559,16 @@ body {
   }
 }
 
-.feature .container {
+@media (max-width: 767px) {
+  .product ul {
+    max-width: 345px;
+  }
+  .product ul li a {
+    height: 350px;
+  }
+}
+
+.feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,10 +578,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px 0;
+  margin: 60px auto;
 }
 
-.feature .container .ad {
+.feature .ad {
   background: url("https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index9.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -593,44 +590,44 @@ body {
   max-width: 720px;
 }
 
-.feature .container .text {
+.feature .text {
   margin-left: 30px;
   width: 30%;
 }
 
-.feature .container .text h3 {
+.feature .text h3 {
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
 }
 
-.feature .container .text p {
+.feature .text p {
   font-size: 16px;
   line-height: 24px;
   padding: 16px 0;
 }
 
-.feature .container .text a {
+.feature .text a {
   color: #AC8A46;
 }
 
 @media (max-width: 768px) {
-  .feature .container .ad {
+  .feature .ad {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .feature .container {
+  .feature {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .feature .container .ad {
+  .feature .ad {
     width: 100%;
   }
-  .feature .container .text {
+  .feature .text {
     width: 100%;
     margin-left: 0;
   }
@@ -665,15 +662,17 @@ body {
 
 .footer-banner .container .contact input {
   border: 2px solid #916000;
-  padding: 21px 0 25px 16px;
+  padding: 21px 0 21px 16px;
   width: 100%;
 }
 
-.footer-banner .container .contact span {
+.footer-banner .container .contact button {
   position: absolute;
   background: #916000;
+  border-color: #916000;
   color: #FFF;
-  padding: 21px 26px 20px;
+  width: 131px;
+  height: 60px;
   right: 0;
 }
 
@@ -693,15 +692,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.footer .container h2 {
+.footer .container .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +708,7 @@ body {
   padding-bottom: 22px;
 }
 
-.footer .container h2 span {
+.footer .container .logo p {
   font-size: 14px;
   line-height: 21px;
   margin-left: 20px;
@@ -725,9 +721,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer .container ul li {
